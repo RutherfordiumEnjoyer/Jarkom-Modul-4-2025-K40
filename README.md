@@ -370,6 +370,7 @@ post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 # Routing kembali ke Minastir
 up ip route add 0.0.0.0/0 via 192.231.250.17
 ```
+
   
 ## CIDR - Cisco Packet Tracer
 
