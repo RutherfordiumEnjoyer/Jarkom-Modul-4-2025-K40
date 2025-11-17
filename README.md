@@ -293,7 +293,84 @@ iface eth0 inet static
     gateway 192.231.18.181
     dns-nameservers 192.168.122.1
 ```
+- Amonsul
+```
+auto lo
+iface lo inet loopback
 
+# Internet
+auto eth0
+iface eth0 inet dhcp
+    up iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE
+
+# Ke Minastir
+auto eth1
+iface eth1 inet static
+    address 192.231.250.5
+    netmask 255.255.255.252
+
+# Ke Eregion
+auto eth2
+iface eth2 inet static
+    address 192.231.250.9
+    netmask 255.255.255.252
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+```
+- Minastir
+```
+auto lo
+iface lo inet loopback
+
+# Ke Amonsul
+auto eth0
+iface eth0 inet static
+    address 192.231.250.6
+    netmask 255.255.255.252
+    gateway 192.231.250.5
+
+# Ke Amorth
+auto eth1
+iface eth1 inet static
+    address 192.231.250.17
+    netmask 255.255.255.252
+
+# Ke Anor
+auto eth2
+iface eth2 inet static
+    address 192.231.250.21
+    netmask 255.255.255.252
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Routing LAN
+up ip route add 192.231.6.0/23 via 192.231.250.22   # Beacon
+up ip route add 192.231.4.0/23 via 192.231.250.22   # Silmarils
+
+# Ke cabang Amorth (Erendis, Elrond, Erebor)
+up ip route add 192.231.17.128/26 via 192.231.250.18
+up ip route add 192.231.17.64/27  via 192.231.250.18
+up ip route add 192.231.17.208/30 via 192.231.250.18
+```
+- Amorth
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.250.18
+    netmask 255.255.255.252
+    gateway 192.231.250.17
+
+auto eth1
+iface eth1 inet static
+    address 192.231.17.65     # Erendis gateway
+    netmask 255.255.255.224
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Routing kembali ke Minastir
+up ip route add 0.0.0.0/0 via 192.231.250.17
+```
+  
 ## CIDR - Cisco Packet Tracer
 
 ### Topology
