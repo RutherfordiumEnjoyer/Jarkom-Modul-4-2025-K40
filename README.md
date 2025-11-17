@@ -42,6 +42,258 @@
 
 <img width="1920" height="1080" alt="Add a little bit of body text (2)" src="https://github.com/user-attachments/assets/f30942fd-ff69-49c7-b510-9abc6e22b8ba" />
 
+### Config
+
+- Mirdain
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.0.2
+    netmask 255.255.252.0
+    gateway 192.231.0.1
+    dns-nameservers 192.168.122.1
+```
+
+- Silmarils
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.4.2
+    netmask 255.255.254.0
+    gateway 192.231.4.1
+    dns-nameservers 192.168.122.1
+```
+
+- Balrog
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.6.2
+    netmask 255.255.254.0
+    gateway 192.231.6.1
+    dns-nameservers 192.168.122.1
+```
+- Beacon
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.8.2
+    netmask 255.255.254.0
+    gateway 192.231.8.1
+    dns-nameservers 192.168.122.1
+```
+- Khazad
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.10.2
+    netmask 255.255.255.0
+    gateway 192.231.10.1
+    dns-nameservers 192.168.122.1
+```
+- Melkor
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.11.2
+    netmask 255.255.255.0
+    gateway 192.231.11.1
+    dns-nameservers 192.168.122.1
+```
+- Arthedain
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.12.2
+    netmask 255.255.255.0
+    gateway 192.231.12.1
+    dns-nameservers 192.168.122.1
+
+```
+- Lindon
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.13.2
+    netmask 255.255.255.0
+    gateway 192.231.13.1
+    dns-nameservers 192.168.122.1
+
+```
+- Thrandull
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.14.2
+    netmask 255.255.255.0
+    gateway 192.231.14.1
+    dns-nameservers 192.168.122.1
+
+```
+- Morgul
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.15.2
+    netmask 255.255.255.128
+    gateway 192.231.15.1
+    dns-nameservers 192.168.122.1
+```
+- Shadow
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.15.130
+    netmask 255.255.255.128
+    gateway 192.231.15.129
+    dns-nameservers 192.168.122.1
+```
+- Gothmog
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.16.2
+    netmask 255.255.255.128
+    gateway 192.231.16.1
+    dns-nameservers 192.168.122.1
+```
+- Edhil
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.16.130
+    netmask 255.255.255.128
+    gateway 192.231.16.129
+    dns-nameservers 192.168.122.1
+```
+- Anarion
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.17.2
+    netmask 255.255.255.128
+    gateway 192.231.17.1
+    dns-nameservers 192.168.122.1
+```
+- Palantir
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.17.130
+    netmask 255.255.255.192
+    gateway 192.231.17.129
+    dns-nameservers 192.168.122.1
+```
+- Elrond
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.17.194
+    netmask 255.255.255.192
+    gateway 192.231.17.193
+    dns-nameservers 192.168.122.1
+```
+- Imrahil
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.2
+    netmask 255.255.255.224
+    gateway 192.231.18.1
+    dns-nameservers 192.168.122.1
+```
+- Erendis
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.2
+    netmask 255.255.255.224
+    gateway 192.231.18.1
+    dns-nameservers 192.168.122.1
+```
+- Mirkwood
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.66
+    netmask 255.255.255.224
+    gateway 192.231.18.65
+    dns-nameservers 192.168.122.1
+```
+- Doriath
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.98
+    netmask 255.255.255.224
+    gateway 192.231.18.97
+    dns-nameservers 192.168.122.1
+```
+- Arnor
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.130
+    netmask 255.255.255.240
+    gateway 192.231.18.129
+    dns-nameservers 192.168.122.1
+```
+- IronCrown
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.146
+    netmask 255.255.255.248
+    gateway 192.231.18.145
+    dns-nameservers 192.168.122.1
+```
+- Hobbiton
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.154
+    netmask 255.255.255.248
+    gateway 192.231.18.153
+    dns-nameservers 192.168.122.1
+```
+- Grond
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.162
+    netmask 255.255.255.248
+    gateway 192.231.18.161
+    dns-nameservers 192.168.122.1
+```
+- Gwaith
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.170
+    netmask 255.255.255.248
+    gateway 192.231.18.169
+    dns-nameservers 192.168.122.1
+```
+- Erebor
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.178
+    netmask 255.255.255.252
+    gateway 192.231.18.177
+    dns-nameservers 192.168.122.1
+
+```
+- Utumno
+```
+auto eth0
+iface eth0 inet static
+    address 192.231.18.182
+    netmask 255.255.255.252
+    gateway 192.231.18.181
+    dns-nameservers 192.168.122.1
+```
+
 ## CIDR - Cisco Packet Tracer
 
 ### Topology
