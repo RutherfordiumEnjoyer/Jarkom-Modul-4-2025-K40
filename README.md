@@ -370,7 +370,34 @@ post-up echo 1 > /proc/sys/net/ipv4/ip_forward
 # Routing kembali ke Minastir
 up ip route add 0.0.0.0/0 via 192.231.250.17
 ```
+- Anor
+```
+# /etc/network/interfaces - ANOR (fix Silmarils + Beacon di eth1)
 
+auto lo
+iface lo inet loopback
+
+post-up echo 1 > /proc/sys/net/ipv4/ip_forward
+
+# Link ke Minastir (192.231.250.20/30)
+# Minastir = 192.231.250.21, Anor = 192.231.250.22
+auto eth0
+iface eth0 inet static
+    address 192.231.250.22
+    netmask 255.255.255.252
+    gateway 192.231.250.21
+
+# === eth1 ke switch (Silmarils + Beacon di kabel yang sama) ===
+# IP utama: gateway Silmarils 192.231.4.0/23
+auto eth1
+iface eth1 inet static
+    address 192.231.4.1
+    netmask 255.255.254.0
+
+    # Tambahkan IP kedua: gateway Beacon 192.231.8.0/23
+    up   ip addr add 192.231.8.1/23 dev eth1 || true
+    down ip addr del 192.231.8.1/23 dev eth1 || true
+```
   
 ## CIDR - Cisco Packet Tracer
 
