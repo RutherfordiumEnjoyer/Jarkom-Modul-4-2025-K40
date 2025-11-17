@@ -88,3 +88,29 @@
 | Numenor ↔ Gudur | 192.231.18.208 | 255.255.255.252 | 192.231.18.211 | 192.231.18.209 - 192.231.18.210 |
 | Numenor ↔ Mordor | 192.231.18.212 | 255.255.255.252 | 192.231.18.215 | 192.231.18.213 - 192.231.18.214 |
 | Mordor ↔ Erain | 192.231.18.216 | 255.255.255.252 | 192.231.18.219 | 192.231.18.217 - 192.231.18.218 |
+
+### Penggabungan - CIDR
+
+<img width="721" height="181" alt="image" src="https://github.com/user-attachments/assets/ca804660-4151-427c-aa9c-8de067b2f85c" />
+
+<img width="728" height="182" alt="image" src="https://github.com/user-attachments/assets/590f5f5f-2dc4-4c1d-b59a-b9daccf409ff" />
+
+<img width="727" height="106" alt="image" src="https://github.com/user-attachments/assets/f60ed6ad-81b1-40fa-a6c2-415a328deb5f" />
+
+<img width="731" height="129" alt="image" src="https://github.com/user-attachments/assets/5f3d3368-d9dd-4f98-af85-e03330d153c3" />
+
+<img width="726" height="148" alt="image" src="https://github.com/user-attachments/assets/082fc580-e1ca-433a-a80a-b52017c211ad" />
+
+<img width="558" height="124" alt="image" src="https://github.com/user-attachments/assets/74cd40e9-984a-49bf-9dbe-a2cef805029a" />
+
+<img width="553" height="178" alt="image" src="https://github.com/user-attachments/assets/17eaf69c-87cb-4ae1-9f86-f5c452a092be" />
+
+<img width="551" height="118" alt="image" src="https://github.com/user-attachments/assets/bdb94779-e680-45b5-8fdd-abb19cb6f8c0" />
+
+<img width="551" height="121" alt="image" src="https://github.com/user-attachments/assets/48a79fe3-eb7a-4433-ad4c-d2bdb43f3ffa" />
+
+
+
+
+
+
