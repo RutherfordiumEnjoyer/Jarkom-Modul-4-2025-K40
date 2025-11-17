@@ -38,3 +38,9 @@
 ### Tree
 
 <img width="1920" height="1080" alt="Add a little bit of body text" src="https://github.com/user-attachments/assets/43dc680b-404c-4c79-8b55-23ad19a30533" />
+
+## CIDR - Cisco Packet Tracer
+
+### Topology
+
+<img width="1402" height="616" alt="image" src="https://github.com/user-attachments/assets/777ae8a6-6314-4086-a8c8-d070f718ae23" />
